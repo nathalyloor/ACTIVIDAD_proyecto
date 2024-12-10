@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Datos principales">Inicio</a></li>
+            <li><a href="#Datos universitarios">Universitarios</a></li>
+            <li><a href="#Gustos ">Gustos</a></li>
+            <li><a href="#registerar datos">Registrar datos</a></li>
+            <li><a href="#datos">Datos Registrados</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- Página de inicio -->
+        <div id="Datos principales">
+            <h1>¡Bienvenidos a la pagina web para conocerme mejor!</h1>
+            <p><strong>Nombre:</strong> Jennifer Nathaly </p>
+            <p><strong>Apellido:</strong> Loor Mecias</p>
+            <p><strong>Correo:</strong> jnloor@espe.edu.ec</p>
+            <p><strong>Curso:</strong> 1382</p>
+        </div>
+
+        <!-- Página de datos universitarios -->
+        <div id="Datos universitarios">
+            <h1>Nuestros Datos </h1>
+            <p>Tenemos los siguientes:</p>
+            <ul>
+                <li>id: L00415929</li>
+                <li>Cedula de identidad: 1728620277</li>
+                <li>Nombres y apellidos: Jennifer Nathaly Loor Mecias</li>
+                <li>Carrera: Tecnologia de la informacion</li>
+                <li>Semestre cursando: 5to semestre</li>
+            </ul>
+        </div>
+
+        <!-- Página de gustos -->
+        <div id="Gustos ">
+            <h1>Mis gustos</h1>
+            <p>Disfruta mi informacion:</p>
+            <ul>
+                <li>Musica Favorita: Bachata</li>
+                <li>Tema de interes: Tecnologia y plataformas</li>
+                <li>Color favorito: Negro</li>
+                <li>Cafe Favorito: Capuchino</li>
+                <li>Pasatiempo: ver series o escuchar musica</li>
+            </ul>
+        </div>
+
+        <!-- Página de registro de datos -->
+        <div id="register">
+            <h1>Registro de Datos</h1>
+            <form onsubmit="registerUser(event)">
+                <label for="id">ID:</label>
+                <input type="text" id="id">
+                
+                <label for="cedula">Cédula de Identidad:</label>
+                <input type="text" id="cedula">
+                
+                <label for="name">Nombres y Apellidos:</label>
+                <input type="text" id="name">
+                
+                <label for="dob">Fecha de Nacimiento:</label>
+                <input type="date" id="dob">
+                
+                <label for="city">Ciudad de Procedencia:</label>
+                <select id="city">
+                    <option value="Quito">Quito</option>
+                    <option value="Quininde">Quininde</option>
+                    <option value="Santo Domingo">Santo Domingo</option>
+                    <option value="Manta">Manta</option>
+                    <option value="Otras">Otras</option>
+                </select>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <!-- Página de visualización de datos -->
+        <div id="datos">
+            <h1>Datos de Clientes Registrados</h1>
+            <table id="user-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Cédula</th>
+                    <th>Nombres y Apellidos</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Ciudad de Procedencia</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
